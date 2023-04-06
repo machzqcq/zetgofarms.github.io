@@ -1,0 +1,30 @@
+---
+title: Our Story
+hero: Our story
+---
+
+<p class="editor-link" style="text-align: center; position: relative;
+    top: -185px;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
+<ul class="staff">
+	{% for person in site.staff_members %}
+		<li>
+			<div class="staff-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+			<div class="name">{{ person.name }}</div>
+		</li>
+	{% endfor %}
+</ul>
+
+<div class="thirds story-points">
+	<div>
+		<h3 class="editable">BACKGROUND</h3>
+		<p class="editable">ZetGo Farm's founders are software-engineers & entrepreneurs with deep empathy towards people and processes. You can read about one of the founders (Pradeep) on his full profile @<a href="https://www.linkedin.com/in/pradeepmacharla/">LinkedIn</a></p>
+	</div>
+	<div>
+		<h3 class="editable">WHY FARMING</h3>
+		<p class="editable">We believe that <u><strong>farming is a kind of meditation</strong></u> and can act as a calming therapy, especially after a heavy coding session during the day. For e.g. Software Engineers need physical exercise after spending hours in front of computers.</p>
+	</div>
+	<div>
+		<h3 class="editable">MOTIVATION</h3>
+		<p class="editable">Organically grown vegetables are not only healthy, but also taste better and also foster sustainability of the planet and its resources. The founders have a very interesting story on why they believe ORGANIC is NOT only the best, but efficient and has the best ROI of your food from economics perspective. After all, the food that goes in your body is what keeps you alive! </p>
+	</div>
+</div>

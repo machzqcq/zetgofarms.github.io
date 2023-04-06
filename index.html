@@ -1,0 +1,43 @@
+---
+title: Natural & Organic 
+hero: 100% Natural & Organic 
+subtitle: Sustainable & Earth-Friendly Farming Practices
+---
+
+<div class="content" id="products">
+	<section>
+		<div class="container">
+			<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_products" class="btn"><strong>&#9998;</strong> Manage products</a></p>
+			<ul class="product-list">
+				{% for product in site.products %}
+					<li>
+						{% include product-styles.html product=product %}
+						<div class="product-details">
+							<h4><a href="{{ product.url }}">{{ product.name }}</a></h4>
+							<div class="product-description">
+								{{ product.description_markdown | truncate: 45 | markdownify }}
+							</div>
+							<!-- <p>${{ product.price }}</p> -->
+						</div>
+					</li>
+				{% endfor %}
+				<li></li>
+				<li>
+				</li>
+				<li></li>
+			</ul>
+			<div><center>
+			<a href="https://sendy.zet-go.com/sendy/subscription?f=biYfRG9pJhn38rMEf763UjZCC9x2qhUOUHIyxVhgXjOtDghLpUg5LqJvN5gCde763uhH">
+					<img src="/images/subscribe_email.jpg" width="145", height="48">
+			</a>
+			<a href="https://www.facebook.com/zetgoorganicfarms/followers">
+				<img src="/images/follow_fb.jpg" width="145", height="48"> </a>
+			<a href="https://chat.whatsapp.com/DfFrpm6apnF2VwwyO5CRfe">
+				<img src="/images/join_whatsapp.jpg" width="145", height="48"> </a>
+			<h4>Subscription includes - newsletter, email notifications as soon as we harvest (first come first serve), discounts etc. </h4>
+
+		</center>
+		</div>
+		</div>
+	</section>
+</div>

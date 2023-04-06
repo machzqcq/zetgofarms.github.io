@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="content">
+	<section class="page">
+		<div class="container">
+			<div class="product-container">
+				{% include product-styles.html product=page %}
+				<div class="product-details" id="add">
+					<h3>{{ page.name }}</h3>
+					{{ page.description_markdown | markdownify }}
+
+					<h4>Subscription includes - newsletter, notifications as soon as we harvest (first come first serve), discounts etc. </h4>
+				<div><a href="https://sendy.zet-go.com/sendy/subscription?f=biYfRG9pJhn38rMEf763UjZCC9x2qhUOUHIyxVhgXjOtDghLpUg5LqJvN5gCde763uhH">
+						<img src="/images/subscribe_email.jpg" width="145", height="48">
+						<a href="https://www.facebook.com/zetgoorganicfarms/followers">
+							<img src="/images/follow_fb.jpg" width="145", height="48"> </a>
+						<a href="https://chat.whatsapp.com/DfFrpm6apnF2VwwyO5CRfe">
+							<img src="/images/join_whatsapp.jpg" width="145", height="48">
+				</a></div>
+				
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="{{ site.api_key }}" id="snipcart"></script>
+<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
